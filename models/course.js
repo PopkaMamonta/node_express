@@ -25,7 +25,7 @@ class Course{
 
         return new Promise((resolve,reject)=>{
             fs.writeFile(
-                path,join(__dirname,'..','data','courses.json'),
+                path.join(__dirname,'..','data','courses.json'),
                 JSON.stringify(courses),
                 (err)=>{
                     if(err){
@@ -55,4 +55,4 @@ class Course{
     }
 }
 
-module.export=Course
+module.exports=Course
